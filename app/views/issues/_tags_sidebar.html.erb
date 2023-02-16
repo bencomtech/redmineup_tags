@@ -1,4 +1,4 @@
-<% unless sidebar_tags.empty? -%>
+<% defined?(sidebar_tags) && unless sidebar_tags.empty? -%>
 <div class="sidebar-tags">
   <h3><%= l(:tags) %></h3>
   <%= render_sidebar_tags %>
